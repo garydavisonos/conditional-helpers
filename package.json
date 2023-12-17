@@ -1,0 +1,28 @@
+{
+  "name": "conditional-helpers",
+  "version": "1.0.0",
+  "description": "A collection of JavaScript helper functions to be used in conditional logic within projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garydavisonos/conditional-helpers.git"
+  },
+  "keywords": [
+    "JS",
+    "javaScript",
+    "helper",
+    "functions",
+    "for",
+    "conditional",
+    "logic"
+  ],
+  "author": "Gary Davison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garydavisonos/conditional-helpers/issues"
+  },
+  "homepage": "https://github.com/garydavisonos/conditional-helpers#readme"
+}

@@ -1,0 +1,34 @@
+name: "Code Quality 🏆"
+on:
+  release:
+    types: [published]
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches:
+      - master
+      - release/**
+
+jobs:
+  linting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18.x"
+
+      - name: Install packages
+        working-directory: .
+        run: npm ci --legacy-peer-deps
+
+      - name: Build
+        working-directory: .
+        run: npm run build
+
+      - name: ESLint
+        working-directory: .
+        run: npm run lint

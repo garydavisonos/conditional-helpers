@@ -2,9 +2,10 @@
   "name": "conditional-helpers",
   "version": "1.0.0",
   "description": "A collection of JavaScript helper functions to be used in conditional logic within projects",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "eslint .",
     "build": "tsc"
   },
@@ -29,8 +30,11 @@
   "homepage": "https://github.com/garydavisonos/conditional-helpers#readme",
   "devDependencies": {
     "@eslint/js": "^9.18.0",
+    "@types/jest": "^27.0.0",
     "eslint": "^9.18.0",
     "globals": "^15.14.0",
+    "jest": "^27.0.0",
+    "ts-jest": "^27.0.0",
     "typescript": "^5.7.3"
   }
 }

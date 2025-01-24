@@ -11,5 +11,6 @@
     "declaration": true, // Generate declaration files
     "declarationDir": "./dist" // Place declaration files in the dist directory
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["src/__tests__/"]
 }

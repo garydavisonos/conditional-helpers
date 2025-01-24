@@ -1,9 +1,9 @@
 {
   "name": "conditional-helpers",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "A collection of JavaScript helper functions to be used in conditional logic within projects",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "jest",
     "lint": "eslint .",

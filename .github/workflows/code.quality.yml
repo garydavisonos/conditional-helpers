@@ -1,13 +1,10 @@
 name: "Code Quality 🏆"
 on:
-  release:
-    types: [published]
   pull_request:
     types: [opened, synchronize, reopened]
   push:
     branches:
-      - master
-      - release/**
+      - main
 
 jobs:
   linting:

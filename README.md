@@ -7,7 +7,6 @@ A collection of JavaScript helper functions to be used in conditional logic with
 - [Installation](#installation)
 - [Usage](#usage)
 - [Functions](#functions)
-- [Tests](#tests)
 - [License](#license)
 
 ## Installation
@@ -51,14 +50,6 @@ The following helper functions are available in the conditional-helpers package:
 - isArrayEmpty: Checks if an array is empty.
 - isArrayHasLength: Checks if an array has length.
 - hasLength: Checks if a value has length.
-
-## Tests
-
-Jest tests can be run with the following command in your terminal:
-
-```bash
-npm run test
-```
 
 ## License
 

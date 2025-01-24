@@ -18,6 +18,11 @@ jobs:
           node-version: "18.x"
           registry-url: "https://registry.npmjs.org/"
 
+      - name: Authenticate with npm
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > ~/.npmrc
+
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
 
@@ -26,6 +31,9 @@ jobs:
 
       - name: Build project
         run: npm run build
+
+      - name: Post build
+        run: npm run postbuild
 
       - name: Publish to npm
         run: npm publish

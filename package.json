@@ -1,13 +1,14 @@
 {
   "name": "conditional-helpers",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A collection of JavaScript helper functions to be used in conditional logic within projects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
-    "build": "tsc"
+    "build": "tsc",
+    "postbuild": "mv dist/index.* ./"
   },
   "repository": {
     "type": "git",
@@ -46,6 +47,8 @@
   },
   "type": "module",
   "files": [
-    "dist"
+    "index.d.ts",
+    "index.js",
+    "README.md"
   ]
 }

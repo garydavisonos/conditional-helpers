@@ -1,6 +1,6 @@
 {
   "name": "conditional-helpers",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A collection of JavaScript helper functions to be used in conditional logic within projects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,13 +14,19 @@
     "url": "git+https://github.com/garydavisonos/conditional-helpers.git"
   },
   "keywords": [
-    "JS",
-    "javaScript",
-    "helper",
-    "functions",
-    "for",
-    "conditional",
-    "logic"
+    "JavaScript",
+    "Conditional logic",
+    "Helper functions",
+    "Type checking",
+    "utility",
+    "validation",
+    "type-checking",
+    "npm-package",
+    "conditional-helpers",
+    "helper-functions",
+    "data-validation",
+    "type-guards",
+    "javascript-utilities"
   ],
   "author": "Gary Davison",
   "license": "ISC",

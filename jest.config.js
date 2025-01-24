@@ -1,4 +1,3 @@
-// filepath: /Users/garydavison/Sites/conditional-helpers/jest.config.js
 module.exports = {
   preset: "ts-jest",
   testEnvironment: "node",

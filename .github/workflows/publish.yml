@@ -32,6 +32,9 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Post build
+        run: npm run postbuild
+
       - name: Publish to npm
         run: npm publish
         env:

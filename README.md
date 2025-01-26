@@ -2,6 +2,9 @@
 
 A collection of JavaScript helper functions to be used in conditional logic within projects.
 
+![Code Quality](https://github.com/garydavisonos/conditional-helpers/actions/workflows/code.quality.yml/badge.svg)
+![Publish to npm](https://github.com/garydavisonos/conditional-helpers/actions/workflows/publish.yml/badge.svg)
+
 ## Table of Contents
 
 - [Installation](#installation)

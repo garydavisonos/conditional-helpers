@@ -4,6 +4,11 @@ A collection of JavaScript helper functions to be used in conditional logic with
 
 ![Code Quality](https://github.com/garydavisonos/conditional-helpers/actions/workflows/code.quality.yml/badge.svg)
 ![Publish to npm](https://github.com/garydavisonos/conditional-helpers/actions/workflows/publish.yml/badge.svg)
+![Version](https://img.shields.io/npm/v/conditional-helpers)
+![ESLint](https://img.shields.io/badge/code%20style-eslint-brightgreen)
+![TypeScript](https://img.shields.io/badge/language-typescript-blue)
+
+
 
 ## Table of Contents
 

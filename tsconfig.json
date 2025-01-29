@@ -8,8 +8,9 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "declaration": true, // Generate declaration files
-    "declarationDir": "./dist" // Place declaration files in the dist directory
+    "removeComments": true,
+    "declaration": true, 
+    "declarationDir": "./dist" 
   },
   "include": ["src/**/*"],
   "exclude": ["src/__tests__/"]

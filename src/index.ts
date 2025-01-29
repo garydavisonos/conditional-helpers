@@ -34,7 +34,6 @@ export const isFunction = (value: any): value is Function => {
  * @param value - The value to check.
  * @returns True if the value is an object, false otherwise.
  */
-
 export const isObject = (value: any): value is object => {
   return Object.prototype.toString.call(value) === "[object Object]";
 }
@@ -55,7 +54,6 @@ export const hasLength = (arg: any): boolean =>  {
  * @param value - The value to check.
  * @returns True if the value is a boolean, false otherwise.
  */
-
 export const isBoolean = (value: any): value is boolean => {
   return typeof value === "boolean";
 };
@@ -66,7 +64,6 @@ export const isBoolean = (value: any): value is boolean => {
  * @param value - The value to check.
  * @returns True if the value is a Date object and not invalid, false otherwise.
  */
-
 export const isDate = (value: any): value is Date => {
   return value instanceof Date && !isNaN(value as any);
 }
@@ -87,7 +84,6 @@ export const isNumber = (value: any): value is number => {
  * @param value - The object to check.
  * @returns True if the object has no own enumerable properties, false otherwise.
  */
-
 export const isObjectEmpty = (value: any): boolean => {
   return Object.keys(value).length === 0;
 }
@@ -98,7 +94,6 @@ export const isObjectEmpty = (value: any): boolean => {
  * @param value - The value to check.
  * @returns True if the value is a string with length greater than 0, false otherwise.
  */
-
 export const isStringHasLength = (value: any): boolean => {
   return isString(value) && hasLength(value);
 }
@@ -129,7 +124,6 @@ export const isArrayHasLength = (value: any): boolean => {
  * @param value - The value to check.
  * @returns True if the value is an array with length 0, false otherwise.
  */
-
 export const isArrayEmpty = (value: any): boolean => {
   return isArray(value) && !hasLength(value);
 }
@@ -150,7 +144,6 @@ export const isObjectHasProps = (value: any): boolean => {
  * @param value - The value to check.
  * @returns True if the value is a boolean and truthy, false otherwise.
  */
-
 export const isBooleanTruthy = (value: any): boolean => {
   return isBoolean(value) && value;
 }

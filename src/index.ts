@@ -109,14 +109,14 @@ export const isStringEmpty = (value: any): boolean => {
 }
 
 /**
- * Checks if the provided value is a non-empty array.
+ * Checks if the provided value is a non-empty array. With optional length check.
  *
  * @param value - The value to check.
+ * @param length - Optional parameter to check if the array has a specific length.
  * @returns True if the value is an array with length greater than 0, false otherwise.
  */
-export const isArrayHasLength = (value: any): boolean => {
-  return isArray(value) && hasLength(value);
-}
+export const isArrayHasLength = (value: any, length?: number): boolean =>
+  isArray(value) && hasLength(value) && (length === undefined || value.length === length);
 
 /**
  * Checks if the provided value is an empty array.

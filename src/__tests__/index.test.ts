@@ -78,6 +78,9 @@ test("isStringEmpty should return true for empty strings", () => {
 test("isArrayHasLength should return true for non-empty arrays", () => {
   expect(isArrayHasLength([1, 2, 3])).toBe(true);
   expect(isArrayHasLength([])).toBe(false);
+  expect(isArrayHasLength([], 1)).toBe(false);
+  expect(isArrayHasLength([1, 2], 3)).toBe(false);
+  expect(isArrayHasLength([1, 2, 3], 3)).toBe(true);
 });
 
 test("isArrayEmpty should return true for empty arrays", () => {
